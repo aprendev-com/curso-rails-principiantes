@@ -6,9 +6,9 @@
 
 <span class='price'><%= @product.price %>$</span>
 
-<%= link_to 'Editar producto', edit_product_path(@product) %>
+<%= link_to t('.edit'), edit_product_path(@product) %>
 
-<%= link_to 'Eliminar producto', product_path(@product), data: {
+<%= link_to t('.delete'), product_path(@product), data: {
   turbo_method: :delete,
-  turbo_confirm: '¿Estás seguro?'
+  turbo_confirm: t('common.confirm')
 } %>
