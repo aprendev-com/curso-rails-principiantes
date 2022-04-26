@@ -1,0 +1,5 @@
+<h1><%= t('.title') %></h1>
+
+<%= render partial: 'category', collection: @categories %>
+
+<%= link_to t('.new'), new_category_path %>

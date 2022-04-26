@@ -20,6 +20,7 @@ en:
               blank: "can't be blank"
   common:
     confirm: 'Are you sure?'
+    back: 'Go back'
   shared:
     header:
       add: 'Add product'
@@ -39,3 +40,20 @@ en:
       updated: 'Your product has been successfully updated'
     destroy:
       destroyed: 'Your product has been successfully destroyed'
+  categories:
+    category:
+      edit: 'Edit'
+      delete: 'Delete'
+    index:
+      title: 'Categories'
+      new: 'Add category'
+    edit:
+      title: 'Edit category'
+    create:
+      created: 'Your category has been successfully created'
+    update:
+      updated: 'Your category has been successfully updated'
+    destroy:
+      destroyed: 'Your category has been successfully destroyed'
+    new:
+      title: 'New category'
