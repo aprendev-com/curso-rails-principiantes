@@ -21,6 +21,11 @@
   </div>
 
   <div>
+    <%= form.label :category_id %>
+    <%= form.collection_select :category_id, Category.all.order(name: :asc), :id, :name %>
+  </div>
+
+  <div>
     <%= form.label :photo %>
     <%= form.file_field :photo %>
   </div>

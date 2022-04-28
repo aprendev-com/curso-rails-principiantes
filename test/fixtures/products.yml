@@ -4,8 +4,16 @@ ps4:
   title: PS4 Fat
   description: PS4 en buen estado
   price: 150
+  category: videogames
 
 switch:
   title: Nintendo Switch
   description: Le falla el lector de tarjeta SD
   price: 195
+  category: videogames
+
+air:
+  title: Macbook Air
+  description: Le falla la batería
+  price: 250
+  category: computers
