@@ -32,6 +32,8 @@ en:
     index:
       title: 'Products:'
       all: 'All'
+      min_price: 'Min price'
+      max_price: 'Max price'
     show:
       edit: 'Edit product'
       delete: 'Delete product'
