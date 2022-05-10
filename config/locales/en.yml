@@ -34,6 +34,7 @@ en:
       all: 'All'
       min_price: 'Min price'
       max_price: 'Max price'
+      query_text: 'What do you want to search?'
     show:
       edit: 'Edit product'
       delete: 'Delete product'
