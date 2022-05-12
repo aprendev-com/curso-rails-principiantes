@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
     @categories = Category.order(name: :asc).load_async
-    @products = Product.with_attached_photo.order(created_at: :desc).load_async
+    @products = Product.with_attached_photo
     if params[:category_id]
       @products = @products.where(category_id: params[:category_id])
     end
@@ -14,6 +14,10 @@ class ProductsController < ApplicationController
     if params[:query_text].present?
       @products = @products.search_full_text(params[:query_text])
     end
+
+    order_by = Product::ORDER_BY.fetch(params[:order_by]&.to_sym, Product::ORDER_BY[:newest])
+
+    @products = @products.order(order_by).load_async
   end
 
   def show
