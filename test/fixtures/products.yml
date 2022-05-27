@@ -12,8 +12,146 @@ switch:
   price: 195
   category: videogames
 
+nintendo64:
+  title: Nintendo 64 en buen estado
+  description: Con su caja, solo tiene algún pequeño arañazo
+  price: 190
+  category: videogames
+
+megadrive:
+  title: Sega Megadrive
+  description: Funciona perfectamente, solo consola
+  price: 90
+  category: videogames
+
+driver2:
+  title: Driver 2 para ps1
+  description: Como nuevo en su caja y con instrucciones
+  price: 25
+  category: videogames
+
+ps5:
+  title: PS5 nueva sin lector
+  description: A estrenar, usada solo dos veces.
+  price: 650
+  category: videogames
+
+gameboy:
+  title: Game Boy Color
+  description: Con su caja. Color morada transparente.
+  price: 150
+  category: videogames
+
 air:
   title: Macbook Air
   description: Le falla la batería
   price: 250
   category: computers
+
+imac:
+  title: iMac 27" 2015
+  description: i5 con 8gb de ram y SSD
+  price: 90
+  category: computers
+
+ryzen:
+  title: Ryzen 5950x
+  description: Sin estrenar precintado como nuevo
+  price: 590
+  category: computers
+
+nvidia:
+  title: Nvidia 3090ti
+  description: Solo usada 3 meses la vendo porque no la uso
+  price: 1500
+  category: computers
+
+ram:
+  title: 16GB Ram DDR4 3200mhz
+  description: Funciona perfectamente
+  price: 95
+  category: computers
+
+renault:
+  title: Renault Clio 2009
+  description: 85000km, 95cv
+  price: 4500
+  category: cars
+
+seat:
+  title: Seat Panda clásico
+  description: Tan solo 90000km, 75cv. Del año 1980
+  price: 5500
+  category: cars
+
+michael:
+  title: Vinilo Michael Jackson Thriller
+  description: Como nuevo a estrenar
+  price: 45
+  category: music
+
+queen:
+  title: Vinilo Queen
+  description: Ligeras marcas de uso de los años 80
+  price: 35
+  category: music
+
+tv:
+  title: Televisión LG 48 pulgadas
+  description: Viene con smart TV funciona perfectamente
+  price: 350
+  category: electronic
+
+kindle:
+  title: Lector de libros Kindle 2010
+  description: Tiene marcas de uso pero funciona bien
+  price: 35
+  category: electronic
+
+ipod:
+  title: iPod touch
+  description: Como nuevo a estrenar con su caja
+  price: 175
+  category: electronic
+
+harry:
+  title: Colección entera de Harry Potter
+  description: Todos los libros de la saga. Bien cuidados!
+  price: 65
+  category: books
+
+hobbit:
+  title: El hobbit
+  description: Libro en buen estado
+  price: 15
+  category: books
+
+iphone:
+  title: iPhone 13
+  description: Funciona correctamente.
+  price: 400
+  category: mobile
+
+pixel:
+  title: Google Pixel 4
+  description: Le falla la batería
+  price: 100
+  category: mobile
+
+surf:
+  title: Tabla de surf
+  description: Usada dos veces. Como nueva.
+  price: 125
+  category: sports
+
+tennis:
+  title: Raqueta de tenis profesional
+  description: Fabricada en fibra de carbono. Solo un par de arañazos
+  price: 135
+  category: sports
+
+skate:
+  title: Skateboard
+  description: Como nuevo con las ruedas recién cambiadas
+  price: 75
+  category: sports

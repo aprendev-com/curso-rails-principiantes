@@ -1,4 +1,4 @@
-<%= turbo_frame_tag 'categories' do %>
+<%= turbo_frame_tag 'home' do %>
   <h2><%= t('.title') %></h2>
 
   <%= form_with url: products_path, method: :get do |form| %>
@@ -15,7 +15,8 @@
 
   <%= render partial: 'category', collection: @categories %>
 
-  <div class="products">
+  <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products' do %>
     <%= render partial: 'product', collection: @products %>
-  </div>
+    <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+  <% end %>
 <% end %>

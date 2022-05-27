@@ -8,3 +8,21 @@ computers:
 
 clothes:
   name: Ropa
+
+cars:
+  name: Coches
+
+music:
+  name: Música
+
+electronic:
+  name: Electrónica
+
+books:
+  name: Libros
+
+mobile:
+  name: Móviles
+
+sports:
+  name: Deportes
