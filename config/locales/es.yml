@@ -26,6 +26,10 @@ es:
   shared:
     header:
       add: 'Añadir producto'
+  authentication:
+    users:
+      create:
+        created: 'Tu cuenta se ha creado!'
   products:
     edit:
       title: 'Editar producto'
