@@ -7,17 +7,17 @@
 
   <div>
     <%= form.label :email %>
-    <%= form.email_field :email %>
+    <%= form.email_field :email, required: true %>
   </div>
 
   <div>
     <%= form.label :username %>
-    <%= form.text_field :username %>
+    <%= form.text_field :username, required: true %>
   </div>
 
   <div>
     <%= form.label :password %>
-    <%= form.password_field :password %>
+    <%= form.password_field :password, required: true %>
   </div>
 
   <div>
