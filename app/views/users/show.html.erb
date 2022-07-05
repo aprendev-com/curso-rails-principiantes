@@ -1,0 +1,6 @@
+<%= @user.username %>
+
+<%= turbo_frame_tag "products-#{@pagy.page}", class: 'products' do %>
+    <%= render partial: 'products/product', collection: @products %>
+    <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+<% end %>
