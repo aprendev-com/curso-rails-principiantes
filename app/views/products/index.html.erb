@@ -7,7 +7,7 @@
 
       <%= form.number_field :max_price, placeholder: t('.max_price'),onChange: 'this.form.requestSubmit()', value: params[:max_price], class: "w-1/3 rounded-2xl border-gray-200 mx-2" %>
 
-      <%= form.select :order_by, options_for_select(Product::ORDER_BY.keys.map { |order| [t(".#{order}"), order] }, params[:order_by]), {}, { onChange: 'this.form.requestSubmit()', class: "w-1/3 rounded-2xl border-gray-200" } %>
+      <%= form.select :order_by, options_for_select(Product::ORDER_BY.keys.map { |order| [t(".#{order}"), order] }, params[:order_by]), {}, { onChange: 'this.form.requestSubmit()', class: "w-1/3 rounded-2xl border-gray-200 text-gray-500" } %>
     </div>
   <% end %>
 
@@ -18,9 +18,9 @@
   </div>
 
   <%= turbo_frame_tag :products, class: "flex flex-col m-2" do %>
-    <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products flex flex-col w-full' do %>
+    <%= turbo_frame_tag "products-#{@pagy.page}", class: 'products flex flex-col w-full sm:flex-row sm:flex-wrap sm:gap-x-2' do %>
       <%= render partial: 'product', collection: @products %>
-      <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products flex flex-col w-full', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
+      <%= turbo_frame_tag "products-#{@pagy.next}", class: 'products flex flex-col w-full sm:flex-row sm:flex-wrap sm:gap-x-2', src: pagy_url_for(@pagy, @pagy.next), loading: :lazy if @pagy.next %>
     <% end %>
   <% end %>
 <% end %>
