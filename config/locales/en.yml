@@ -91,3 +91,7 @@ en:
   favorites:
     index:
       title: 'My favorites'
+  user_mailer:
+    welcome:
+      subject: 'Welcome to SellIT'
+      welcome_message: 'Hey %{username}, welcome to SellIT. We hope you sell a lot!'
