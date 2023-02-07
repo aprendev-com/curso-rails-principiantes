@@ -54,6 +54,9 @@ gem "tailwindcss-rails", "~> 2.0"
 # View components
 gem "view_component", "~> 2.74"
 
+# File uploads
+gem "aws-sdk-s3"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
